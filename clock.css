@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Poppins:wght@400;500&display=swap');
+body{
+    margin: 0%;
+    height: 100vb;
+    background: linear-gradient(rgba(0,123,156,1),rgba(1,234,213,0.6));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.clock{
+    cursor:grab;
+    height: 350px;
+    width: 350px;
+    background-color:rgb(6, 1, 17);
+    color: white;
+    border: 20px solid white;
+    box-shadow: 0px 0px 40px black;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+.clock ul li{
+    font-family: poppins;
+    position: absolute;
+    list-style: none;
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    transform: rotate(calc(30deg * var(--i)));
+    inset: 5px;
+}
+.clock ul li span{
+    transform: rotate(calc(-30deg * var(--i)));
+    display: inline-block;
+}
+.clock::after{
+    content: '';
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    background-color: white;
+    border-radius: 50%;
+}
+.needle{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+.needle span{
+    position: absolute;
+    height: var(--h);
+    width: var(--w);
+    background-color:var(--c);
+    border-radius: 5px;
+}
+#digital{
+    font-family: poppins;
+    border-radius: 10px;
+    font-size: 22px;
+    font-weight: bold;
+    text-align: center;
+    top:64%;
+    height: 35px;
+    width: 145px;
+    background-color: rgb(20, 180, 201);
+    color: black;
+    position: absolute;
+}
