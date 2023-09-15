@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@10..48,500&family=Poppins:wght@400;500&display=swap');
 body{
-    margin: 0%;
-    height: 100vb;
+    margin: 0;
+    height:100vh;
     background: linear-gradient(rgba(0,123,156,1),rgba(1,234,213,0.6));
     display: flex;
     align-items: center;
@@ -70,4 +70,14 @@ body{
     background-color: rgb(20, 180, 201);
     color: black;
     position: absolute;
+}
+
+@media screen and (max-width:600px) {
+    .clock{
+        height: 18em;
+        width: 18em;
+    }
+    .clock ul li{
+        font-size: 1.4em;
+    }
 }
