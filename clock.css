@@ -43,6 +43,7 @@ body{
     background-color: white;
     border-radius: 50%;
 }
+                                                /* needle design */
 .needle{
     position: absolute;
     display: flex;
@@ -56,6 +57,7 @@ body{
     background-color:var(--c);
     border-radius: 5px;
 }
+                                                /* digital clock design */
 #digital{
     font-family: poppins;
     border-radius: 10px;
